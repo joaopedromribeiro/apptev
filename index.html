@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="home" class="cabecalho">
+        
+        <h1>AppTEV</h1>
+      <div class="hamburguer">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#texto-medio">
+                    <i class="fa-solid fa-user"></i>
+                    Sobre
+                </a>
+            </li>
+            <li>
+                <a href="#form">
+                    <i class="fa-solid fa-code"></i>
+                    Formulário
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        
+        
+
+        <section class="section-presentation">
+            <div class="escute" id="texto-apresentacao">
+                <h2>Uma jornada de saúde para todos, sem barreiras ou limitações</h2>
+                <a href="#" class="botao">Saiba mais</a>
+            </div>
+                
+
+        </section>
+    </main>
+    <section>
+        <div id="texto-medio">
+            <h2>Medical 2 - Nossa proposta</h2>
+            <p>O projeto propõe a adaptação do aplicativo AppTEV, desenvolvido 
+                pela Sanofi, para ser utilizado de forma mais efetiva nos 
+                computadores. O objetivo principal é priorizar a acessibilidade, 
+                permitindo que mais pessoas tenham acesso às informações 
+                médicas e recursos disponibilizados pela Sanofi.</p>
+                <p>O processo de adaptação do aplicativo envolverá a utilização de 
+                    técnicas de Machine Learning e Inteligência Artificial na avaliação 
+                    de risco e extração de resultados para anexar ao prontuário do 
+                    paciente. Os passos a serem seguidos incluem a coleta de dados 
+                    relevantes, a preparação desses dados por meio de limpeza e 
+                    transformação, o treinamento do modelo com base nas 
+                    características dos pacientes, a implementação do modelo no 
+                    sistema de apoio e o monitoramento e atualização contínua do 
+                    desempenho do sistema.</p>
+                    <p>Ao finalizar a adaptação, espera-se que o aplicativo AppTEV nos 
+                        computadores seja capaz de avaliar o risco de forma mais eficiente, 
+                        proporcionando resultados precisos que poderão ser anexados 
+                        diretamente ao prontuário do paciente. Isso contribuirá para uma 
+                        melhor tomada de decisões médicas e para a melhoria do 
+                        atendimento aos pacientes.</p>
+        </div>
+    </section>
+    <section>
+        <div class = "imagem-media">
+            <img class="medio" src="./imagem/medio.jpg" alt="medio">
+            <img class="medio" src="./imagem/medio 3.jpg" alt="medio">
+            <img class="medio" src="./imagem/medio 2.jpg" alt="medio">
+        </div>
+    </section>
+    <div id="texto-medio">
+
+            <p>Em suma, o trabalho busca utilizar tecnologias avançadas, como 
+                Machine Learning e Inteligência Artificial, juntamente com o 
+                framework TensorFlow, para otimizar a utilização do aplicativo 
+                AppTEV nos computadores, visando aumentar a acessibilidade e 
+                melhorar a efetividade da ferramenta no contexto da avaliação de 
+                risco médico.</p>
+    </div>
+    <section>
+        <form id="form" class="formulario" method="post"> 
+            <p>Envie uma mensagem ou uma sugestão preenchendo o formulário abaixo</p>
+            
+            <div class="field">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+            </div>
+            
+            <div class="field">
+                <label for="telefone">Seu Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+            </div>
+    
+            <div class="field">
+                <label for="email">Seu E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+            </div>        
+            <div class="field radiobox">
+                <span>Deseja receber nossas novidades?</span>
+                <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+            </div>
+            <div class="field">
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+            </div>
+    
+            <input type="submit" name="acao" value="Enviar">
+        </form>
+<script src="./JS/formulario.js"></script>
+<script src="./JS/menu.js"></script>
+</body>
+</html>
